@@ -12,17 +12,20 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     html, body {
-        heigth: 100%;
+        color: ${({ theme }) => theme.colors.tertiary};
+        background-color: ${({ theme }) => theme.colors.primary};
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
     }
 
    a {
     text-decoration: none;
-    color: inherit
+    color: inherit;
    }
 `
     
 
 export const StyledH1 = styled.h1`
-    font-size: ${pxToRem(32)}
+    font-size: ${pxToRem(32)};
     font-weight: 600;
 `
