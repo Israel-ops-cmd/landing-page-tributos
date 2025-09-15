@@ -1,12 +1,17 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { ThemeProvider } from "styled-components"
+import { theme } from "./styles/Theme"
+import { GlobalStyle } from "./styles/GlobalStyle"
+import { Header } from "./header"
+
 
 function App() {
   return (
-   <Router>
-    <Routes>
-      <Route path="/" element={<>HOME</>}/>
-    </Routes>
-   </Router>
+   <ThemeProvider theme={theme}>
+    <>
+    <GlobalStyle />
+    <Header />
+    </>
+   </ThemeProvider>
   )
 }
 
