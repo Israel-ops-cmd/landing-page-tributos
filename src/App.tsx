@@ -4,6 +4,7 @@ import { GlobalStyle } from "./styles/GlobalStyle"
 import { Header } from "./header"
 import { Hero } from "./hero"
 import { Trust } from "./trust"
+import { Biography } from "./biography"
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <Header />
     <Hero />
     <Trust />
+    <Biography />
     </>
    </ThemeProvider>
   )

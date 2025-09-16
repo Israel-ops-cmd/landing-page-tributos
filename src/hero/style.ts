@@ -22,7 +22,7 @@ export const Logo = styled.div`
     img {
         width: ${pxToRem(250)};
         height: ${pxToRem(125)};
-        margin-top: ${pxToRem(60)};
+        margin-top: ${pxToRem(20)};
         margin-bottom: ${pxToRem(30)};
     }
 `
