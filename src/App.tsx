@@ -3,6 +3,7 @@ import { theme } from "./styles/Theme"
 import { GlobalStyle } from "./styles/GlobalStyle"
 import { Header } from "./header"
 import { Hero } from "./hero"
+import { Trust } from "./trust"
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <GlobalStyle />
     <Header />
     <Hero />
+    <Trust />
     </>
    </ThemeProvider>
   )

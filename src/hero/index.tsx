@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
             <Container>
                 <Logo><img src={mainLogo} alt="" /></Logo>
                 <StyledH1>Cresça com segurança.</StyledH1>
-                <StyledH1 style={{ marginBottom: pxToRem(10)}}>Expanda com excelência.</StyledH1>
+                <StyledH1 style={{ marginBottom: pxToRem(20)}}>Expanda com excelência.</StyledH1>
                 <StyledH2>Serviços Contábeis com padrão nacional para empresas que precisam de controle absoluto, clareza estratégica e suporte de alto nível para crescer - no Brasil ou no mundo.</StyledH2>
                 <Button>Solicitar diagnóstico estratégico</Button>
             </Container>

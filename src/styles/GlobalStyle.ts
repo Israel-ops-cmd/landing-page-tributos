@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     html, body {
+        background-color: ${({ theme }) => theme.colors.primary};
         color: ${({ theme }) => theme.colors.tertiary};
         height: 100%;
         font-family: 'Poppins', sans-serif;
@@ -49,7 +50,7 @@ export const Button = styled.button`
     font-size: ${pxToRem(16)};
     font-weight: 600;
     cursor: pointer;
-    margin-top: ${pxToRem(24)};
+    margin-top: ${pxToRem(60)};
     margin-bottom: ${pxToRem(80)};
     transition: all 0.3s ease;
 
