@@ -13,7 +13,6 @@ export const GlobalStyle = createGlobalStyle`
 
     html, body {
         color: ${({ theme }) => theme.colors.tertiary};
-        background-color: ${({ theme }) => theme.colors.primary};
         height: 100%;
         font-family: 'Poppins', sans-serif;
     }
@@ -28,9 +27,34 @@ export const GlobalStyle = createGlobalStyle`
 export const StyledH1 = styled.h1`
     font-size: ${pxToRem(32)};
     font-weight: 500;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 `
 
 export const StyledH2 = styled.h2`
     font-size: ${pxToRem(20)};
     font-weight: 400;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+`
+export const Button = styled.button`
+    background: linear-gradient(
+        135deg,
+        ${({ theme }) => theme.colors.secondary} 0%,
+        ${({ theme }) => theme.colors.tertiary} 100%
+    );
+
+    color: ${({ theme }) => theme.colors.primary};
+    border: none;
+    border-radius: ${pxToRem(8)};
+    padding: ${pxToRem(12)} ${pxToRem(24)};
+    font-size: ${pxToRem(16)};
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: ${pxToRem(24)};
+    margin-bottom: ${pxToRem(80)};
+    transition: all 0.3s ease;
+
+    &:hover {
+        filter: brightness(1.1);
+        transform: translateY(-2px);
+    }
 `
