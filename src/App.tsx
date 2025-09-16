@@ -7,6 +7,7 @@ import { Trust } from "./trust"
 import { Biography } from "./biography"
 import { Services } from "./services"
 import { Forms } from "./forms"
+import { Footer } from "./footer"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <Biography />
     <Services />
     <Forms />
+    <Footer />
     </>
    </ThemeProvider>
   )
