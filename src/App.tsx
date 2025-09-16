@@ -6,6 +6,7 @@ import { Hero } from "./hero"
 import { Trust } from "./trust"
 import { Biography } from "./biography"
 import { Services } from "./services"
+import { Forms } from "./forms"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Trust />
     <Biography />
     <Services />
+    <Forms />
     </>
    </ThemeProvider>
   )
