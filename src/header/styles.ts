@@ -7,11 +7,20 @@ export const Container = styled.header`
     justify-content: center;
     align-items: center;
 `
+
+export const Logo = styled.div`
+    img {
+        width: ${pxToRem(100)};
+        height: ${pxToRem(80)};
+        margin-right: ${pxToRem(900)};
+        margin-top: ${pxToRem(20)}
+    }
+`
 export const Nav = styled.nav`
     display: flex;
     align-items: center;
-    margin-top: ${pxToRem(20)};
     gap: ${pxToRem(60)};
+    position: absolute;
 `
 
 export const NavLink = styled.a`
