@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { pxToRem } from "../styles/Utils"
 
 export const Container = styled.header`
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: black;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -25,6 +25,6 @@ export const Nav = styled.nav`
 `
 
 export const NavLink = styled.a`
-    font-weight: 500;
+    font-weight: 600;
 `
 
