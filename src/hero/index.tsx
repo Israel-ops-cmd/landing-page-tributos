@@ -3,6 +3,7 @@ import { Container, Logo, PageWrapper } from "./style"
 import { StyledH1, StyledH2 } from "../styles/GlobalStyle"
 import { pxToRem } from "../styles/Utils"
 import mainLogo from '../assets/mainLogo.jpg'
+import { Button } from "../styles/GlobalStyle"
 
 export const Hero: React.FC = () => {
     return(
@@ -12,6 +13,7 @@ export const Hero: React.FC = () => {
                 <StyledH1>Cresça com segurança.</StyledH1>
                 <StyledH1 style={{ marginBottom: pxToRem(10)}}>Expanda com excelência.</StyledH1>
                 <StyledH2>Serviços Contábeis com padrão nacional para empresas que precisam de controle absoluto, clareza estratégica e suporte de alto nível para crescer - no Brasil ou no mundo.</StyledH2>
+                <Button>Solicitar diagnóstico estratégico</Button>
             </Container>
         </PageWrapper>
     )

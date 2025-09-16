@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { pxToRem } from "../styles/Utils"
 
 export const Container = styled.header`
+    background-color: ${({ theme }) => theme.colors.primary};
     width: 100%;
     display: flex;
     justify-content: center;
