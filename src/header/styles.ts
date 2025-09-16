@@ -10,8 +10,8 @@ export const Container = styled.header`
 
 export const Logo = styled.div`
     img {
-        width: ${pxToRem(100)};
-        height: ${pxToRem(80)};
+        width: ${pxToRem(50)};
+        height: ${pxToRem(50)};
         margin-right: ${pxToRem(900)};
         margin-top: ${pxToRem(20)}
     }

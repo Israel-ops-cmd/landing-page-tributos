@@ -2,7 +2,6 @@ import React from "react"
 import { Container, Nav, NavLink, Logo } from "./styles"
 import logo from '../assets/logo.jpg'
 
-
 export const Header: React.FC = () => {
     return (
         <Container>

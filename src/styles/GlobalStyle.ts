@@ -27,5 +27,10 @@ export const GlobalStyle = createGlobalStyle`
 
 export const StyledH1 = styled.h1`
     font-size: ${pxToRem(32)};
-    font-weight: 600;
+    font-weight: 500;
+`
+
+export const StyledH2 = styled.h2`
+    font-size: ${pxToRem(20)};
+    font-weight: 400;
 `
