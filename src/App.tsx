@@ -5,6 +5,7 @@ import { Header } from "./header"
 import { Hero } from "./hero"
 import { Trust } from "./trust"
 import { Biography } from "./biography"
+import { Services } from "./services"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <Hero />
     <Trust />
     <Biography />
+    <Services />
     </>
    </ThemeProvider>
   )
