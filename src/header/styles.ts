@@ -26,5 +26,11 @@ export const Nav = styled.nav`
 
 export const NavLink = styled.a`
     font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 `
 

@@ -50,6 +50,7 @@ export const SmallButton = styled.button`
     font-weight: 600;
     cursor: pointer;;
     transition: all 0.3s ease;
+    text-align: center;
 
     &:hover {
         filter: brightness(1.1);

@@ -4,7 +4,7 @@ import { Cards, Card, Container, Text } from "./style"
 
 export const Trust: React.FC = () => {
     return(
-        <Container>
+        <Container id="solutions">
             <Text>💼 Soluções que simplificam sua vida financeira</Text>
             <Cards>
                 <Card>

@@ -35,9 +35,16 @@ export const Card = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: all 0.3s ease;
 
     h4 {
         font-size: ${pxToRem(16)};
         margin-botton: ${pxToRem(12)};
     }
+
+    &:hover {
+        transform: translateY(${pxToRem(-5)});
+        box-shadow: ${pxToRem(0)} ${pxToRem(4)} ${pxToRem(12)} rgba(0,0,0,0.15);
+    }
+
 `

@@ -7,10 +7,10 @@ export const Header: React.FC = () => {
         <Container>
             <Logo> <img src={blackLogo} alt="" /></Logo>
             <Nav>
-                <NavLink>Home</NavLink>
-                <NavLink>Quem somos</NavLink>
-                <NavLink>Serviços</NavLink>
-                <NavLink>Blog</NavLink>
+                <NavLink href="#home">Home</NavLink>
+                <NavLink href="#quem-somos">Quem somos</NavLink>
+                <NavLink href="#services">Serviços</NavLink>
+                <NavLink href="#solutions">Soluções</NavLink>
             </Nav>
         </Container>
     )

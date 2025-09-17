@@ -5,12 +5,19 @@ import time from '../assets/time.jpg'
 
 export const Biography: React.FC = () => {
     return(
-        <Container>
+        <Container id="quem-somos">
             <Time><img src={time} alt="" /></Time>
             <Container_text>
                 <Text>Quem Somos</Text>
                 <Text_2>Somos uma contabilidade especializada em ajudar empreendedores a manterem suas obrigações fiscais em dia, com praticidade e transparência. Nossa missão é simplificar sua vida financeira para que você foque no que realmente importa: o crescimento do seu negócio.</Text_2>
-                <SmallButton>Consultar CNPJ</SmallButton>
+                <SmallButton
+                    as="a"
+                    href="https://wa.me/558420107912"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consultar CNPJ
+                </SmallButton>
             </Container_text>
         </Container>
     )
