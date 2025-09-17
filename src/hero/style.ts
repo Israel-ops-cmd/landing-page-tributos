@@ -16,13 +16,32 @@ export const Container = styled.section`
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    @media (max-width: 1024px) {
+        max-width: ${pxToRem(600)};
+    }
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        padding: 0 ${pxToRem(16)};
+    }
 `
 
 export const Logo = styled.div`
     img {
-        width: ${pxToRem(250)};
+        width: ${pxToRem(300)};
         height: ${pxToRem(125)};
         margin-top: ${pxToRem(20)};
         margin-bottom: ${pxToRem(30)};
+
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
+
+    
 `
