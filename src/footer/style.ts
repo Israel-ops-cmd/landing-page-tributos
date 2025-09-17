@@ -10,11 +10,28 @@ export const FooterContainer = styled.footer`
     gap: 200px;
     color: ${({ theme }) => theme.colors.tertiary};
     position: relative;
+
+    @media (max-width: 1024px) {
+        gap: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
 `
 export const Logo = styled.img`
     width: 200px;
     height: auto;
     border-radius: 60%;
+
+    @media (max-width: 768px) {
+        width: 150px;
+    }
 `
 export const ContactInfo = styled.div`
     text-align: center;
@@ -76,6 +93,8 @@ export const WhatsappLine = styled.span`
         width: 16px;
         height: 16px;
     }
+
+
 `
 export const InstagramLink = styled.a`
   display: inline-block;

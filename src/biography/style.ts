@@ -10,6 +10,16 @@ export const Container = styled.section`
     align-items: center;
     gap: ${pxToRem(40)};
     padding: ${pxToRem(40)} ${pxToRem(20)};
+
+    @media (max-width: 1024px) {
+        gap: ${pxToRem(30)};
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: ${pxToRem(20)};
+        text-align: center;
+    }
 `
 export const Container_text = styled.div`
     display: flex;
@@ -17,21 +27,48 @@ export const Container_text = styled.div`
     gap: ${pxToRem(20)};
     max-width: ${pxToRem(600)};
     text-align: left;
+
+    @media (max-width: 768px) {
+        text-align: center;
+        align-items: center;
+        order: 1;
+    }
 `
 export const Text = styled.h3`
     font-size: ${pxToRem(24)};
     color: ${({ theme }) => theme.colors.tertiary};
+
+    @media (max-width: 1024px) {
+        font-size: ${pxToRem(22)};
+    }
+
+  @media (max-width: 768px) {
+    font-size: ${pxToRem(20)};
+  }
 `
 export const Text_2 = styled.p`
     font-size: ${pxToRem(16)};
     color: ${({ theme }) => theme.colors.tertiary};
+
+    
 `
 export const Time = styled.div`
+    width: 100%;
+    max-width: ${pxToRem(400)};
+
     img {
         width: 100%;
-        max-width: ${pxToRem(400)};
         height: auto;
         border-radius: ${pxToRem(10)};
+    }
+    
+    @media (max-width: 1024px) {
+        max-width: ${pxToRem(350)};
+    }
+
+    @media (max-width: 768px) {
+        max-width: ${pxToRem(300)};
+        order: 2;
     }
 `
 

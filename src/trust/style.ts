@@ -15,10 +15,14 @@ export const Text = styled.h3`
     font-size: ${pxToRem(24)};
     color: ${({ theme }) => theme.colors.tertiary};
     margin-top: ${pxToRem(30)};
+
+    @media (max-width: 768px) {
+        font-size: ${pxToRem(20)};
+    }
 `
 export const Cards = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: ${pxToRem(40)};
     margin-bottom: ${pxToRem(70)};
@@ -47,4 +51,12 @@ export const Card = styled.div`
         box-shadow: ${pxToRem(0)} ${pxToRem(4)} ${pxToRem(12)} rgba(0,0,0,0.15);
     }
 
+    @media (max-width: 1024px) {
+        width: ${pxToRem(250)};
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: ${pxToRem(320)};
+    }
 `
