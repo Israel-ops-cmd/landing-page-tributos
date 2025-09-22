@@ -1,0 +1,62 @@
+import styled from "styled-components"
+import { pxToRem } from "../styles/Utils"
+
+export const Container = styled.section`
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+   
+`
+export const Text = styled.h3`
+    font-size: ${pxToRem(24)};
+    color: ${({ theme }) => theme.colors.tertiary};
+    margin-top: ${pxToRem(30)};
+
+    @media (max-width: 768px) {
+        font-size: ${pxToRem(20)};
+    }
+`
+export const Cards = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: ${pxToRem(40)};
+    margin-bottom: ${pxToRem(70)};
+    gap: ${pxToRem(20)};
+`
+export const Card = styled.div`
+    background-color: ${({ theme }) => theme.colors.primary};
+    border-radius: ${pxToRem(12)};
+    padding: ${pxToRem(20)};
+    width: ${pxToRem(300)};
+    height: ${pxToRem(150)};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    h4 {
+        font-size: ${pxToRem(16)};
+        margin-botton: ${pxToRem(12)};
+    }
+
+    &:hover {
+        transform: translateY(${pxToRem(-5)});
+        box-shadow: ${pxToRem(0)} ${pxToRem(4)} ${pxToRem(12)} rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 1024px) {
+        width: ${pxToRem(250)};
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: ${pxToRem(320)};
+    }
+`
