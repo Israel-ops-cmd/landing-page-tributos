@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Logo, PageWrapper } from "./style"
 import { StyledH1, StyledH2 } from "../styles/GlobalStyle"
 import { pxToRem } from "../styles/Utils"
-import mainLogo from '../assets/mainLogo.jpg'
+import mainLogo from '../assets/mainLogo.webp'
 import { Button } from "../styles/GlobalStyle"
 
 export const Hero: React.FC = () => {
