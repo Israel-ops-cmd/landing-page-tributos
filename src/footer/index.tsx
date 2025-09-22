@@ -9,9 +9,9 @@ import {
     InstagramLink,
     LegalInfo
 } from "./style"
-import logo from '../assets/mainLogo.jpg'
-import wppIcon from '../assets/wpp.png'
-import instagramIcon from '../assets/instagram.png'
+import logo from '../assets/mainLogo.webp'
+import wppIcon from '../assets/wpp.webp'
+import instagramIcon from '../assets/instagram.webp'
 
 
 

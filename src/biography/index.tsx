@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Time, Container_text, Text, Text_2, SmallButton } from "./style"
-import time from '../assets/time.jpg'
+import time from '../assets/time.webp'
 
 
 export const Biography: React.FC = () => {
