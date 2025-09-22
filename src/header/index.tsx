@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Nav, NavLink, Logo } from "./styles"
-import blackLogo from '../assets/blackLogo.png'
+import blackLogo from '../assets/blackLogo.webp'
 
 export const Header: React.FC = () => {
     return (
