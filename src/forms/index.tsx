@@ -8,7 +8,7 @@ export const Forms: React.FC = () => {
         e.preventDefault()
 
         const form = e.currentTarget;
-        const formData = new FormData(form);
+        const formData = new FormData(form)
 
         try {
             await fetch("https://api.sheetmonkey.io/form/bQo2mMUPZiZobGbkc24Qno", {
@@ -16,10 +16,10 @@ export const Forms: React.FC = () => {
                 body: formData,
             });
 
-            setStatus("✅ Dados enviados com sucesso!");
-            form.reset();
+            setStatus("✅ Dados enviados com sucesso!")
+            form.reset()
         } catch (error) {
-            setStatus("❌ Erro ao enviar, tente novamente.");
+            setStatus("❌ Erro ao enviar, tente novamente.")
         }
     };
 
