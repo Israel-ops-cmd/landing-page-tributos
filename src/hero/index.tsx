@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
                 <StyledH2>Serviços Contábeis com padrão nacional para empresas que precisam de controle absoluto, clareza estratégica e suporte de alto nível para crescer - no Brasil ou no mundo.</StyledH2>
                 <Button
                     as="a"
-                    href="https://wa.me/558420107912?text=Olá,%20gostaria%20de%20um%20diagnóstico%20estratégico!"
+                    href="https://wa.me/558420107912"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
