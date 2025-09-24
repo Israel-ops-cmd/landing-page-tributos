@@ -1,69 +1,61 @@
-# React + TypeScript + Vite
+# 📊 Tributos Contabilidade
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page desenvolvida para a empresa **Tributos Contabilidade**, com o objetivo de apresentar os serviços da empresa, reforçar a presença digital e oferecer um **formulário de contato** para facilitar a comunicação com os clientes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias utilizadas
+- ⚡ [Vite](https://vitejs.dev/) – Build tool rápida e otimizada
+- ⚛️ [React](https://react.dev/) – Biblioteca para construção da interface
+- 💅 [Styled Components](https://styled-components.com/) – Estilização com CSS-in-JS
+- 📘 [TypeScript](https://www.typescriptlang.org/) – Superset do JavaScript com tipagem estática
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Funcionalidades
+- Página institucional moderna e responsiva
+- Seção de apresentação dos serviços da empresa
+- **Formulário de contato** integrado via SheetMonkey
+- Layout clean e otimizado para conversão
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📡 Integração
+O formulário de contato está conectado ao [SheetMonkey](https://sheetmonkey.io/), que recebe e organiza automaticamente as submissões dos clientes.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🖥️ Como rodar o projeto localmente
+
+Clone o repositório:
+```
+git clone https://github.com/Israel-ops-cmd/landing-page-tributos.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Acesse a pasta do projeto:
 ```
+cd landing-page-tributos
+```
+
+Instale as dependências:
+```
+npm install
+```
+
+Rode o projeto:
+```
+npm run dev
+```
+
+---
+
+## 🌐 Deploy
+
+O projeto está disponível em produção na Vercel:  
+👉 https://tributoscontabilidade.net.br
+
+---
+
+## 📩 Contato
+
+✉️ contato@tributoscontabilidade.net.br
