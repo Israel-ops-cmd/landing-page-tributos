@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
         <FooterContainer>
             <Logo src={logo} alt="Tributos Contabilidade" />
             <ContactInfo>
-                <p>tributoscontabilidade.net.br</p>
+                <p>contato@tributoscontabilidade.net.br</p>
                 <p><WhatsappLine><img src={wppIcon} alt="WhatsApp" /> +55 (84) 2010-7912</WhatsappLine></p>
                 <p><WhatsappLine><img src={wppIcon} alt="WhatsApp" /> +55 (84) 99922-8736</WhatsappLine></p>
                 <p><WhatsappLine><img src={wppIcon} alt="WhatsApp" /> +55 (84) 99655-7905</WhatsappLine></p>
