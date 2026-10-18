@@ -1,0 +1,14 @@
+{
+ "WA_NUM":"558420107912",
+ "WA_FMT":"(84) 2010-7912",
+ "ENDERECO":"Natal/RN (endereço completo a confirmar)",
+ "HORARIO":"Segunda a sexta, das 8h às 18h",
+ "maps_query":"Tributos Contabilidade Natal RN",
+ "LEGAL_EXTRA":"",
+ "deps_reais":false,
+ "deps":[
+  {"texto":"Espaço reservado para o depoimento real de um cliente. Envie o texto e ele entra aqui.","nome":"Nome do cliente","negocio":"Tipo de negócio"},
+  {"texto":"Espaço reservado para o segundo depoimento real.","nome":"Nome do cliente","negocio":"Tipo de negócio"},
+  {"texto":"Espaço reservado para o terceiro depoimento real.","nome":"Nome do cliente","negocio":"Tipo de negócio"}
+ ]
+}

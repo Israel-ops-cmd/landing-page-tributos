@@ -1,61 +1,23 @@
-# 📊 Tributos Contabilidade
+# Tributos Contabilidade
 
-Landing page desenvolvida para a empresa **Tributos Contabilidade**, com o objetivo de apresentar os serviços da empresa, reforçar a presença digital e oferecer um **formulário de contato** para facilitar a comunicação com os clientes.
+Landing page do escritório Tributos Contabilidade (Natal/RN). Página estática em um único arquivo, `index.html`, com CSS e JS embutidos.
 
----
+## Como editar
 
-## 🚀 Tecnologias utilizadas
-- ⚡ [Vite](https://vitejs.dev/) – Build tool rápida e otimizada
-- ⚛️ [React](https://react.dev/) – Biblioteca para construção da interface
-- 💅 [Styled Components](https://styled-components.com/) – Estilização com CSS-in-JS
-- 📘 [TypeScript](https://www.typescriptlang.org/) – Superset do JavaScript com tipagem estática
+O `index.html` é gerado a partir de `_build/`:
 
----
+- `_build/template.html`: estrutura, estilos e animações
+- `_build/data.json`: WhatsApp, endereço, horário e depoimentos
+- `_build/imagens/`: imagens originais (são convertidas para WebP e embutidas)
 
-## ✨ Funcionalidades
-- Página institucional moderna e responsiva
-- Seção de apresentação dos serviços da empresa
-- **Formulário de contato** integrado via SheetMonkey
-- Layout clean e otimizado para conversão
+Depois de editar, gere a página de novo:
 
----
-
-## 📡 Integração
-O formulário de contato está conectado ao [SheetMonkey](https://sheetmonkey.io/), que recebe e organiza automaticamente as submissões dos clientes.
-
----
-
-## 🖥️ Como rodar o projeto localmente
-
-Clone o repositório:
 ```
-git clone https://github.com/Israel-ops-cmd/landing-page-tributos.git
+cd _build && python3 build.py ../index.html
 ```
 
-Acesse a pasta do projeto:
-```
-cd landing-page-tributos
-```
+Requer Python 3 com Pillow (`pip install pillow`).
 
-Instale as dependências:
-```
-npm install
-```
+## Deploy
 
-Rode o projeto:
-```
-npm run dev
-```
-
----
-
-## 🌐 Deploy
-
-O projeto está disponível em produção na Vercel:  
-👉 https://tributoscontabilidade.net.br
-
----
-
-## 📩 Contato
-
-✉️ contato@tributoscontabilidade.net.br
+Vercel, sem etapa de build (`vercel.json`). Cada push na `main` publica o site.
