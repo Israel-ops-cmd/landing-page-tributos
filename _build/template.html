@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"AccountingService","name":"Tributos Contabilidade","description":"Escritório de contabilidade e consultoria tributária em Natal/RN, com atendimento para todo o Brasil.","areaServed":"BR","address":{"@type":"PostalAddress","addressLocality":"Natal","addressRegion":"RN","addressCountry":"BR"},"telephone":"+55 84 2010-7912","email":"contato@tributoscontabilidade.net.br","sameAs":["https://www.instagram.com/tributoscontabilidade_/"]}
+{"@context":"https://schema.org","@type":"AccountingService","name":"Tributos Contabilidade","description":"Escritório de contabilidade e consultoria tributária em Natal/RN, com atendimento para todo o Brasil.","areaServed":"BR","address":{"@type":"PostalAddress","addressLocality":"Natal","addressRegion":"RN","addressCountry":"BR"},"telephone":"+55 84 92003-6292","email":"contato@tributoscontabilidade.net.br","sameAs":["https://www.instagram.com/tributoscontabilidade_/"]}
 </script>
 <style>
 :root{
@@ -133,10 +133,10 @@ p{margin:0}
 @keyframes inScale{to{opacity:1;transform:none}}
 @keyframes inFade{to{opacity:.75}}
 .hero-media{position:relative}
-.frame{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:0 40px 80px -20px #000;border:1px solid var(--line-dark);aspect-ratio:697/411}
+.frame{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:0 40px 80px -20px color-mix(in srgb,var(--ink) 80%,transparent);border:1px solid var(--line-dark);aspect-ratio:697/411}
 .frame img{width:100%;height:100%;object-fit:cover}
 @media(min-width:960px){.frame{aspect-ratio:4/5;transform:rotate(1.5deg)}}
-.chip{position:absolute;left:-12px;bottom:24px;background:var(--paper);color:var(--ink);border-radius:18px;padding:14px 18px;display:flex;gap:12px;align-items:center;box-shadow:0 20px 40px -10px #000;max-width:260px}
+.chip{position:absolute;left:-12px;bottom:24px;background:var(--paper);color:var(--ink);border-radius:18px;padding:14px 18px;display:flex;gap:12px;align-items:center;box-shadow:0 20px 40px -10px color-mix(in srgb,var(--ink) 80%,transparent);max-width:260px}
 .chip i{width:40px;height:40px;border-radius:50%;background:var(--blue);display:grid;place-items:center;flex:none}
 .chip i svg{width:20px;height:20px;color:var(--paper)}
 .chip b{display:block;font-size:.95rem;line-height:1.2}
@@ -165,7 +165,7 @@ p{margin:0}
 .dark .lead,.dark-2 .lead{color:var(--muted-on-dark)}
 
 /* ---------- TICKER ---------- */
-.ticker{position:relative;z-index:2;background:var(--blue);color:var(--paper);overflow:hidden;padding:18px 0;transform:rotate(-1.2deg) scale(1.02);margin:-28px 0 0;box-shadow:0 20px 40px -20px #000}
+.ticker{position:relative;z-index:2;background:var(--blue);color:var(--paper);overflow:hidden;padding:18px 0;transform:rotate(-1.2deg) scale(1.02);margin:-28px 0 0;box-shadow:0 20px 40px -20px color-mix(in srgb,var(--ink) 80%,transparent)}
 .ticker-track{display:flex;gap:48px;width:max-content;animation:tick 38s linear infinite;font-weight:900;font-size:clamp(1rem,2vw,1.35rem);letter-spacing:-.01em;white-space:nowrap}
 .ticker-track span{display:flex;align-items:center;gap:48px}
 .ticker-track span::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--paper);opacity:.6}
@@ -234,44 +234,31 @@ p{margin:0}
 .timeline li.lit h3{color:var(--paper)}
 .timeline p{margin-top:10px;color:var(--muted-on-dark);max-width:34rem}
 
-/* ---------- DEPOIMENTOS ---------- */
-.quotes{display:grid;gap:16px;margin-top:48px}
-@media(min-width:900px){.quotes{grid-template-columns:1.4fr 1fr;grid-template-rows:auto auto}.q1{grid-row:1/3}}
-.quote{border-radius:24px;padding:clamp(24px,3.4vw,44px);background:var(--paper);border:1px solid var(--line-light);display:flex;flex-direction:column;justify-content:space-between;gap:28px}
-.quote blockquote{margin:0;font-size:1.08rem;line-height:1.6}
-.q1{background:var(--ink);color:var(--paper);border:0}
-.q1 blockquote{font-size:clamp(1.35rem,2.6vw,2rem);font-weight:700;line-height:1.3;letter-spacing:-.02em}
-.mark{font-size:5rem;line-height:.6;font-weight:900;color:var(--blue);height:.5em}
-.who{display:flex;align-items:center;gap:14px}
-.who .av{width:48px;height:48px;border-radius:50%;background:var(--blue);color:var(--paper);display:grid;place-items:center;font-weight:900;flex:none}
-.who b{display:block;line-height:1.2}
-.who small{display:block;color:var(--muted-on-light);font-size:.85rem}
-.q1 .who small{color:var(--muted-on-dark)}
-.pending{outline:2px dashed var(--blue);outline-offset:-8px}
 
 /* ---------- SOBRE ---------- */
 .about-grid{display:grid;gap:48px;align-items:center}
 @media(min-width:960px){.about-grid{grid-template-columns:1fr 1fr;gap:80px}}
 .about-grid .frame{aspect-ratio:437/307;transform:none}
 .about p+p{margin-top:18px}
-.about .copy p{color:var(--muted-on-dark);font-size:1.08rem}
-.about .copy p.first{color:var(--paper);font-size:clamp(1.15rem,1.8vw,1.35rem);font-weight:700;line-height:1.5}
+.about .copy p{color:var(--muted-on-light);font-size:1.08rem}
+.about .copy p.first{color:var(--ink);font-size:clamp(1.15rem,1.8vw,1.35rem);font-weight:700;line-height:1.5}
 .mini{display:flex;gap:16px 32px;margin:32px 0;flex-wrap:wrap}
-.mini b{display:block;font-size:clamp(2.2rem,4vw,3rem);font-weight:900;letter-spacing:-.04em;line-height:1;color:var(--blue-soft)}
-.mini span{font-size:.85rem;color:var(--muted-on-dark)}
+.mini b{display:block;font-size:clamp(2.2rem,4vw,3rem);font-weight:900;letter-spacing:-.04em;line-height:1;color:var(--blue)}
+.mini span{font-size:.85rem;color:var(--muted-on-light)}
 
 /* ---------- LOCAL ---------- */
 .loc-grid{display:grid;gap:32px;margin-top:48px}
 @media(min-width:900px){.loc-grid{grid-template-columns:.8fr 1.2fr}}
 .info{display:grid;gap:12px;align-content:start}
-.info div{background:var(--paper);border:1px solid var(--line-light);border-radius:20px;padding:22px 24px}
-.info small{display:block;font-size:.8rem;font-weight:700;color:var(--blue)}
+.info div{background:var(--ink-2);border:1px solid var(--line-dark);border-radius:20px;padding:22px 24px}
+.info small{display:block;font-size:.8rem;font-weight:700;color:var(--blue-soft)}
 .info p{font-weight:700;font-size:1.1rem;line-height:1.4;margin-top:4px}
 .info .btns{background:none;border:0;padding:8px 0 0;display:flex;flex-wrap:wrap;gap:12px}
-.map{border-radius:24px;overflow:hidden;min-height:340px;border:1px solid var(--line-light);background:var(--paper-2)}
+.map{border-radius:24px;overflow:hidden;min-height:340px;border:1px solid var(--line-dark);background:var(--ink-2)}
 .map iframe{width:100%;height:100%;min-height:340px;border:0;display:block;filter:grayscale(.4) contrast(1.05)}
-.btn-line{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 22px;border-radius:999px;border:2px solid var(--ink);color:var(--ink);font-weight:700;text-decoration:none;transition:background .25s,color .25s}
-.btn-line:hover{background:var(--ink);color:var(--paper)}
+@media(max-width:899px){.map{display:none}}
+.btn-line{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 22px;border-radius:999px;border:2px solid var(--paper);color:var(--paper);font-weight:700;text-decoration:none;transition:background .25s,color .25s}
+.btn-line:hover{background:var(--paper);color:var(--ink)}
 
 /* ---------- CTA FINAL ---------- */
 .final{text-align:left;overflow:hidden}
@@ -280,6 +267,7 @@ p{margin:0}
 .final .btn{margin-top:36px}
 .final .ring{position:absolute;right:-12vw;top:50%;width:min(60vw,640px);aspect-ratio:1;border-radius:50%;border:2px solid color-mix(in srgb,var(--paper) 25%,transparent);transform:translateY(-50%);pointer-events:none}
 .final .ring::after{content:"";position:absolute;inset:18%;border-radius:50%;border:2px solid color-mix(in srgb,var(--paper) 18%,transparent)}
+@media(max-width:759px){.final .ring{display:none}}
 
 /* ---------- FOOTER ---------- */
 footer{position:relative;z-index:2;background:var(--ink);border-radius:var(--radius) var(--radius) 0 0;margin-top:calc(var(--radius) * -1);padding:64px 0 calc(40px + env(safe-area-inset-bottom))}
@@ -293,7 +281,7 @@ footer{position:relative;z-index:2;background:var(--ink);border-radius:var(--rad
 .legal{margin-top:40px;padding-top:24px;border-top:1px solid var(--line-dark);font-size:.85rem;color:var(--muted-on-dark);padding-right:72px}
 
 /* ---------- WHATSAPP FLOAT ---------- */
-.wa{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:90;display:flex;align-items:center;gap:10px;height:60px;padding:0 6px 0 6px;border-radius:999px;background:var(--blue);color:var(--paper);text-decoration:none;font-weight:700;box-shadow:0 14px 30px -8px color-mix(in srgb,var(--blue) 60%,#000);transition:transform .35s var(--ease),opacity .35s}
+.wa{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:90;display:flex;align-items:center;gap:10px;height:60px;padding:0 6px 0 6px;border-radius:999px;background:var(--blue);color:var(--paper);text-decoration:none;font-weight:700;box-shadow:0 14px 30px -8px color-mix(in srgb,var(--blue) 60%,var(--ink));transition:transform .35s var(--ease),opacity .35s}
 .wa svg{width:30px;height:30px;margin:0 9px}
 .wa .lbl{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .4s var(--ease),padding .4s;padding:0}
 .wa:hover .lbl,.wa:focus-visible .lbl{max-width:220px;padding-left:14px}
@@ -336,7 +324,6 @@ footer{position:relative;z-index:2;background:var(--ink);border-radius:var(--rad
       <ul class="links">
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#diferenciais">Por que nós</a></li>
-        <li><a href="#clientes">Clientes</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#local">Onde estamos</a></li>
       </ul>
@@ -347,7 +334,6 @@ footer{position:relative;z-index:2;background:var(--ink);border-radius:var(--rad
   <div class="drawer" id="drawer">
     <a href="#servicos">Serviços</a>
     <a href="#diferenciais">Por que nós</a>
-    <a href="#clientes">Clientes</a>
     <a href="#sobre">Sobre</a>
     <a href="#local">Onde estamos</a>
     <a class="btn blue" data-wa href="#">Falar com um contador<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
@@ -476,30 +462,8 @@ footer{position:relative;z-index:2;background:var(--ink);border-radius:var(--rad
   </div>
 </section>
 
-<!-- DEPOIMENTOS -->
-<section class="sheet light-2" id="clientes" aria-labelledby="t-dep">
-  <div class="wrap">
-    <h2 class="h2 split" id="t-dep">Quem já economiza com a gente conta como foi</h2>
-    <div class="quotes">
-      <figure class="quote q1 rv pending" style="margin:0">
-        <div class="mark" aria-hidden="true">“</div>
-        <blockquote>{{DEP1}}</blockquote>
-        <figcaption class="who"><span class="av" aria-hidden="true">{{DEP1_INI}}</span><span><b>{{DEP1_NOME}}</b><small>{{DEP1_NEG}}</small></span></figcaption>
-      </figure>
-      <figure class="quote rv pending" style="margin:0">
-        <blockquote>{{DEP2}}</blockquote>
-        <figcaption class="who"><span class="av" aria-hidden="true">{{DEP2_INI}}</span><span><b>{{DEP2_NOME}}</b><small>{{DEP2_NEG}}</small></span></figcaption>
-      </figure>
-      <figure class="quote rv pending" style="margin:0">
-        <blockquote>{{DEP3}}</blockquote>
-        <figcaption class="who"><span class="av" aria-hidden="true">{{DEP3_INI}}</span><span><b>{{DEP3_NOME}}</b><small>{{DEP3_NEG}}</small></span></figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
 <!-- SOBRE -->
-<section class="sheet dark-2 about" id="sobre" aria-labelledby="t-sobre">
+<section class="sheet light-2 about" id="sobre" aria-labelledby="t-sobre">
   <div class="wrap about-grid">
     <div class="frame reveal-img"><img src="data:image/webp;base64,{{TEAM}}" width="437" height="307" loading="lazy" decoding="async" alt="Equipe da Tributos Contabilidade mostrando o resultado financeiro de um cliente em um tablet"></div>
     <div class="copy">
@@ -511,13 +475,13 @@ footer{position:relative;z-index:2;background:var(--ink);border-radius:var(--rad
       </div>
       <p class="first rv">Somos a Tributos Contabilidade. Há 2 anos ajudamos pequenos e médios empresários, prestadores de serviço e autônomos a organizar o financeiro e pagar menos imposto, sempre dentro da lei.</p>
       <p class="rv">Começamos porque vimos muito dono de negócio pagando imposto a mais, levando multa por atraso e esperando dias por uma resposta do contador. Hoje são mais de 100 empresas que resolvem tudo isso com a gente pelo WhatsApp, estejam elas em Natal ou em qualquer outra cidade do país.</p>
-      <p class="rv" style="margin-top:32px"><a class="btn" data-wa href="#">Conversar com a equipe<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></p>
+      <p class="rv" style="margin-top:32px"><a class="btn dark" data-wa href="#">Conversar com a equipe<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></p>
     </div>
   </div>
 </section>
 
 <!-- LOCALIZAÇÃO -->
-<section class="sheet light" id="local" aria-labelledby="t-local">
+<section class="sheet dark" id="local" aria-labelledby="t-local">
   <div class="wrap">
     <h2 class="h2 split" id="t-local">Venha tomar um café com a gente ou resolva tudo online</h2>
     <div class="loc-grid">
