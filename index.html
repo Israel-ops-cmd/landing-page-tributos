@@ -105,9 +105,10 @@ p{margin:0}
 
 /* ---------- HERO ---------- */
 .hero{position:relative;min-height:100svh;background:var(--ink);overflow:hidden;display:flex;align-items:center;padding:112px 0 72px}
-.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;filter:grayscale(1) contrast(1.15)}
-.hero .tint{position:absolute;inset:0;background:color-mix(in srgb,var(--ink) 62%,transparent);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
-.hero .tint::after{content:"";position:absolute;inset:0;background:var(--blue);mix-blend-mode:color;opacity:.55}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s var(--ease);filter:saturate(.9) contrast(1.05)}
+.hero video.on{opacity:1}
+.hero .tint{position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--ink) 88%,transparent) 0%,color-mix(in srgb,var(--ink) 62%,transparent) 50%,color-mix(in srgb,var(--ink) 28%,transparent) 100%),linear-gradient(0deg,var(--ink) 0%,transparent 30%)}
+.hero .tint::after{content:"";position:absolute;inset:0;background:var(--blue);mix-blend-mode:soft-light;opacity:.4}
 .glow{position:absolute;border-radius:50%;filter:blur(120px);mix-blend-mode:screen;pointer-events:none}
 .glow.a{width:600px;height:600px;top:-20%;left:20%;background:color-mix(in srgb,var(--blue) 30%,transparent);animation:drift 14s ease-in-out infinite alternate}
 .glow.b{width:500px;height:500px;bottom:-10%;right:20%;background:color-mix(in srgb,var(--blue) 22%,transparent);animation:drift 18s ease-in-out infinite alternate-reverse}
@@ -611,14 +612,18 @@ footer{position:relative;z-index:2;background:var(--ink);border-radius:var(--rad
   addEventListener("keydown", function(e){ if (e.key === "Escape") setMenu(false); });
   addEventListener("resize", function(){ if (innerWidth >= 960) setMenu(false); });
 
-  /* hero video: desktop only, to keep mobile light */
+  /* hero video: from tablet up, to keep phones light */
   var video = document.getElementById("bgvideo");
   var src = "https://stream.mux.com/T6oQJQ02cQ6N01TR6iHwZkKFkbepS34dkkIc9iukgy400g.m3u8";
   var saveData = navigator.connection && navigator.connection.saveData;
-  if (!reduce && !saveData && innerWidth >= 960) {
+  if (!saveData && innerWidth >= 768) {
+    video.muted = true;
+    video.poster = "https://images.unsplash.com/photo-1647356191320-d7a1f80ca777?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080";
+    video.classList.add("on");
+    var start = function(){ if (!reduce) video.play().catch(function(){}); };
     if (video.canPlayType("application/vnd.apple.mpegurl")) {
       video.src = src;
-      video.addEventListener("loadedmetadata", function(){ video.play().catch(function(){}); });
+      video.addEventListener("loadedmetadata", start);
     } else {
       var s = document.createElement("script");
       s.src = "https://cdn.jsdelivr.net/npm/hls.js@1.6.15/dist/hls.min.js";
@@ -626,7 +631,8 @@ footer{position:relative;z-index:2;background:var(--ink);border-radius:var(--rad
         if (!window.Hls || !Hls.isSupported()) return;
         var hls = new Hls({ capLevelToPlayerSize: true });
         hls.loadSource(src); hls.attachMedia(video);
-        hls.on(Hls.Events.MANIFEST_PARSED, function(){ video.play().catch(function(){}); });
+        hls.on(Hls.Events.MANIFEST_PARSED, start);
+        hls.on(Hls.Events.ERROR, function(e, d){ if (d.fatal) hls.destroy(); });
       };
       document.head.appendChild(s);
     }
